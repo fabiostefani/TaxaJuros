@@ -2,7 +2,7 @@ using Aplicacao.TaxaJuros;
 using AutoMoqCore;
 using Xunit;
 
-namespace Aplicacao.Testes
+namespace Aplicacao.Testes.TaxaJuros
 {
     public class AplicTaxaJurosTestes
     {
