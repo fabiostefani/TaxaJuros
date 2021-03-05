@@ -1,6 +1,11 @@
 # API TaxaJuros
 
-Objetivo do projeto é desenvolver uma API para retornar uma Taxa de Juros fixa no valor de 0.01 (1%).
+Retorna taxa de juros  
+
+Responde pelo path relativo "/taxaJuros"
+
+Retorna o juros de 1% ou 0,01 (fixo no código)
+* Exemplo: /taxaJuros Resultado esperado: 0,01
 
 ## Arquitetura
 
@@ -13,8 +18,7 @@ O projeto Api.Testes aplicará os Testes de Integração garantindo que o métod
 E por fim, o projeto de testes Api.TestesIntegracao que tem por objetivo garantir que o EndPoint do API esteja funcionando de forma correta para demais serviços que estarão consumindo a mesma.
 
 ### Techs utilizadas
-
-
+ - [**ASP.NET Core**](https://docs.microsoft.com/pt-br/aspnet/core/?view=aspnetcore-5.0)
  - [**Swagger**](https://www.nuget.org/packages/Swashbuckle/)
  - [**AutoMoqCore**](https://www.nuget.org/packages/AutoMoqCore/)
  - [**XUnit**](https://www.nuget.org/packages/xunit/)
@@ -32,20 +36,23 @@ Rodando local
 > dotnet run --project .\Api\Api.csproj
 ```
 
-Rodando com [**Docker**](https://www.docker.com/) a api Taxa de Juros
+Rodando com [**Docker**](https://www.docker.com/)
 ```
 > git clone https://github.com/fabiostefani/TaxaJuros.git
-> 
+> cd TaxaJuros
+> docker compose up
+```
+A imagem docker para esta API está publicada [Docker HUB](https://hub.docker.com/r/fabiostefani/apitaxajuros).
+Para iniciar essa imagem
+```
+> docker run -p 8001:80 fabiostefani/apitaxajuros:latest
 ```
 
-Rodando com [**Docker**](https://www.docker.com/) ambas as APIs
-```
-> git clone https://github.com/fabiostefani/TaxaJuros.git
-> docker-compose up
-```
+E também a deixei rodando no [Azure Container Registry](http://apitaxajuros.brazilsouth.azurecontainer.io/)
+
 
 ### Link
-[ApiTaxaJuros](http://localhost:5001/swagger)
+ApiTaxaJuros [http://localhost:8001/](http://localhost:8001/swagger)
 
-[ApiCalculoJuros](http://localhost:5000/swagger)
+ApiCalculoJuros [http://localhost:8002/](http://localhost:8002/swagger)
 

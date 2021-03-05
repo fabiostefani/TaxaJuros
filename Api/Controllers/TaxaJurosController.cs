@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Api.Controllers
 {
     [ApiController]
-    [Route("TaxaJuros")]
+    [Route("taxaJuros")]
     public class TaxaJurosController : ControllerBase
     {
         private readonly IAplicTaxaJuros _aplicTaxaJuros;
