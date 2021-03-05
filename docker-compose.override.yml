@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
+    networks:
+      - my-network    
+  
+networks:
+  my-network:
+    external: true
