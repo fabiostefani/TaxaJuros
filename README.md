@@ -52,7 +52,7 @@ E também a deixei rodando no [Azure Container Registry](http://apitaxajuros.bra
 
 
 ### Link
-ApiTaxaJuros [http://localhost:8001/](http://localhost:8001/swagger)
+ApiTaxaJuros [http://localhost:8001/](http://localhost:8001)
 
-ApiCalculoJuros [http://localhost:8002/](http://localhost:8002/swagger)
+ApiCalculoJuros [http://localhost:8002/](http://localhost:8002)
 
